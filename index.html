@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio - Desarrollador Frontend</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+        header {
+            background:#C70039;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .main-container {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        .about-me {
+            flex: 1;
+            padding: 20px;
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .photo {
+            flex: 1;
+            text-align: center;
+            padding: 20px;
+        }
+        .photo img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border: 4px solid #fff;
+        }
+        .projects-container {
+            max-width: 800px;
+            margin: 20px auto;
+        }
+        .projects-header {
+            margin-bottom: 10px;
+margin-left: 10px;
+            text-align: left;
+        }
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+        }
+        .project {
+            background: #fff;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .project h3 {
+            margin-top: 0;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #C70039;
+            color: #fff;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Desarrollador Frontend</h1>
+    <p>Apasionado por crear soluciones web efectivas y atractivas.</p>
+</header>
+
+<div class="main-container">
+    <section class="photo">
+        <img src="imagenes/portfolio.png" alt="Foto principal">
+    </section>
+    
+    <section class="about-me">
+        <h2>Sobre mí</h2>
+        <p>Hola, soy un desarrollador frontend enfocado en la creación de sitios web que organizan y gestionan información de manera eficiente. Disfruto trabajar en proyectos que tienen un impacto real.</p>
+    </section>
+  
+</div>
+
+<div class="projects-container">
+    <h2 class="projects-header"> Proyectos</h2>
+    <div class="projects">
+        <div class="project">
+            <a href="landingpage/landingpage04.html" target_"blank"><h3>Landing Page</h3></a>
+            <p>Diseño y desarrollo de una landing page responsiva, optimizada para captar la atención del usuario.</p>
+        </div>
+        <div class="project">
+           <a target="_blank" href="landingpage/tiendashop_oficial.html"><h3>Web de Ventas</h3> </a>
+            <p>Desarrollo de una plataforma de ventas con diseño atractivo y enfoque en la experiencia del usuario.</p>
+        </div>
+        <div class="project">
+           
+<a target="_blank" href="landingpage/reserva01_oficial_parametros.html"><h3>Web de Reservas</h3>
+ </a>         
+
+  <p>Creación de un sistema de reservas en línea con funcionalidades dinámicas y diseño intuitivo.</p>
+        </div>
+        <div class="project">
+            <h3>Conexión HTML a Google Sheets</h3>
+            <p>Implementación de un formulario HTML conectado a Google Sheets para registrar y mostrar datos en tiempo real.</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2025 Desarrollador Frontend - Todos los derechos reservados</p>
+</footer>
+
+</body>
+</html>
