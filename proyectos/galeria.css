@@ -12,8 +12,8 @@ main {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
-  awidth: 90%;
-a  max-width: 800px;
+  DESACTIVADOwidth: 90%;
+DESACTIVADOmax-width: 800px;
 }
 /*original sin contenedor de imagen
 .gallery img {
