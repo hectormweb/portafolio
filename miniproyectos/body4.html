@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diseño Estilo Revista</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Georgia', serif; /* Tipografía clásica, similar a las revistas */
+      color: #333;
+      background-color: #f4f4f4; /* Fondo neutro */
+      line-height: 1.6;
+    }
+
+    .container {
+      display: grid;
+      grid-template-rows: auto auto 1fr auto;
+      grid-template-columns: 1fr 3fr;
+      grid-template-areas:
+        "header header"
+        "sidebar main"
+        "sidebar main"
+        "footer footer";
+      max-width: 1200px;
+      margin: 0 auto;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    header {
+      grid-area: header;
+      background: #111;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      letter-spacing: 2px;
+    }
+
+    .sidebar {
+      grid-area: sidebar;
+      background: #ececec;
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    .sidebar h2 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+
+    .main {
+      grid-area: main;
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .main h2 {
+      font-size: 1.8rem;
+      margin-bottom: 15px;
+    }
+
+    .main p {
+      text-align: justify;
+      margin-bottom: 15px;
+    }
+
+    footer {
+      grid-area: footer;
+      background: #111;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+      font-size: 0.9rem;
+    }
+
+    footer a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Revista Digital</h1>
+    </header>
+    <aside class="sidebar">
+      <h2>Artículos Destacados</h2>
+      <ul>
+        <li><a href="#">Diseño Web Moderno</a></li>
+        <li><a href="#">Técnicas de Tipografía</a></li>
+        <li><a href="#">El Futuro de Internet</a></li>
+      </ul>
+    </aside>
+    <main class="main">
+      <h2>Título Principal del Artículo</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vehicula nisl a felis varius, id interdum mauris luctus. Morbi at orci nec urna aliquam pretium.</p>
+      <p>Suspendisse potenti. Phasellus blandit tincidunt justo, vel bibendum arcu. Cras nec justo in erat aliquet facilisis. Sed ac nisl auctor, cursus dolor at, vehicula lorem.</p>
+    </main>
+    <footer>
+      <p>&copy; 2025 Revista Digital. Todos los derechos reservados. <a href="#">Política de privacidad</a></p>
+    </footer>
+  </div>
+</body>
+</html>
