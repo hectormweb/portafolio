@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Imágenes de Fondo y Degradados</title>
+  <style>
+    /* Estilo general del body */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "Arial", sans-serif;
+      background-color: #f5f5f5; /* Fondo de seguridad para cuando no cargue la imagen */
+      line-height: 1.6;
+    }
+
+    /* Sección principal con imagen de fondo */
+    .hero {
+      height: 100vh; /* Toma toda la altura de la pantalla */
+      background: linear-gradient(
+          rgba(0, 0, 0, 0.5),
+          rgba(0, 0, 0, 0.5)
+        ),
+        url('fondobody3.jpg') no-repeat center center/cover;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin: 0;
+      text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin: 15px 0;
+      text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+    }
+
+    .hero a {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 1rem;
+      color: #fff;
+      background: #ff5722;
+      text-decoration: none;
+      border-radius: 5px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    .hero a:hover {
+      background: #ff7043;
+      transform: translateY(-3px);
+    }
+
+    /* Sección destacada con fondo degradado */
+    .highlight-section {
+      padding: 50px 20px;
+      background: linear-gradient(90deg, #ff5722, #ff9800);
+      color: white;
+      text-align: center;
+    }
+
+    .highlight-section h2 {
+      font-size: 2rem;
+      margin: 0 0 10px 0;
+    }
+
+    .highlight-section p {
+      font-size: 1rem;
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <!-- Sección Hero con imagen de fondo -->
+  <div class="hero">
+    <h1>Bienvenido al Diseño Visual</h1>
+    <p>
+      Combina imágenes de fondo e increíbles degradados para capturar la atención y destacar el contenido importante.
+    </p>
+    <a href="#">Explorar Más</a>
+  </div>
+
+  <!-- Sección destacada con fondo degradado -->
+  <div class="highlight-section">
+    <h2>¿Por qué elegir este estilo?</h2>
+    <p>
+      Las imágenes y los degradados no solo embellecen, sino que también crean jerarquía visual para guiar a los visitantes.
+    </p>
+  </div>
+</body>
+</html>
