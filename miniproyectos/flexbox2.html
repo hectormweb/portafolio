@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Columnas Responsivas</title>
+    <style>
+        /* Contenedor principal */
+        .contenedor {
+            display: flex; /* Activa el diseño flexible */
+            flex-wrap: wrap; /* Permite que los elementos se muevan a la siguiente línea si no caben */
+            justify-content: center; /* Centra las columnas horizontalmente */
+            gap: 20px; /* Espaciado entre las columnas */
+            padding: 20px; /* Espaciado interno alrededor del contenedor */
+            background-color: #f0f0f0; /* Fondo claro para contraste */
+        }
+
+        /* Estilo de las columnas */
+        .columna {
+            background-color: #007BFF; /* Fondo azul */
+            color: white; /* Texto blanco */
+            padding: 20px; /* Espaciado interno */
+            text-align: center; /* Centra el contenido dentro de la columna */
+            border-radius: 5px; /* Bordes redondeados para diseño moderno */
+            flex: 1 1 300px; /* Controla el ancho de las columnas */
+            max-width: 300px; /* Limita el ancho máximo */
+        }
+
+        /* Aseguramos que las columnas se vean bien en pantallas más pequeñas */
+        @media (max-width: 600px) {
+            .columna {
+                flex: 1 1 100%; /* Las columnas ocupan todo el ancho en pantallas pequeñas */
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Contenedor con columnas -->
+    <div class="contenedor">
+        <div class="columna">Columna 1</div>
+        <div class="columna">Columna 2</div>
+        <div class="columna">Columna 3</div>
+        <div class="columna">Columna 4</div>
+    </div>
+</body>
+</html>
