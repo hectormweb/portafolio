@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejemplo Flexbox con Espacios Verticales</title>
+  <style>
+    /* Estilo general del cuerpo */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      display: flex; /* Flexbox para que el contenedor ocupe todo el alto */
+      justify-content: center; /* Centrar horizontalmente el contenedor */
+      align-items: center; /* Centrar verticalmente el contenedor */
+      height: 100vh; /* Ocupa toda la altura de la ventana */
+    }
+
+    /* Contenedor principal que usa Flexbox */
+    .contenedor {
+      display: flex; /* Activa Flexbox */
+      flex-direction: column; /* Apila las secciones verticalmente */
+      gap: 20px; /* Espacio entre las secciones */
+      width: 80%; /* Ocupa el 80% del ancho de la ventana */
+      max-width: 800px; /* Limita el ancho máximo */
+    }
+
+    /* Estilo para cada sección */
+    .seccion {
+      padding: 20px;
+      background-color: #ffffff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para destacar las secciones */
+    }
+  </style>
+</head>
+<body>
+  <!-- Contenedor principal -->
+  <div class="contenedor">
+    <!-- Sección 1 -->
+    <div class="seccion">
+      <h2>Sección 1</h2>
+      <p>Este es el contenido de la primera sección.</p>
+    </div>
+    <!-- Sección 2 -->
+    <div class="seccion">
+      <h2>Sección 2</h2>
+      <p>Este es el contenido de la segunda sección.</p>
+    </div>
+    <!-- Sección 3 -->
+    <div class="seccion">
+      <h2>Sección 3</h2>
+      <p>Este es el contenido de la tercera sección.</p>
+    </div>
+  </div>
+</body>
+</html>
