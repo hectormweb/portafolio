@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menú Desplegable Simple</title>
+  <style>
+    /* Estilos generales */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    /* Contenedor del menú principal */
+    .menu {
+      display: flex;
+      justify-content: center;
+      background-color: #333;
+      padding: 15px 0;
+    }
+
+    /* Opciones principales del menú */
+    .menu-item {
+      position: relative; /* Necesario para posicionar el submenú */
+      margin: 0 20px;
+      color: white;
+      padding: 10px 25px;
+      cursor: pointer;
+      text-align: center;
+      transition: background-color 0.3s, transform 0.2s;
+    }
+
+    /* Hover para las opciones principales */
+    .menu-item:hover {
+      background-color: #555;
+      transform: scale(1.05); /* Efecto sutil al pasar el mouse */
+    }
+
+    /* Submenús ocultos inicialmente */
+    .submenu {
+      position: absolute;
+      top: 100%; /* Aparece debajo de la opción principal */
+      left: 0;
+      display: none;
+      flex-direction: column;
+      background-color: #444;
+      width: 200px; /* Ancho fijo para que el submenú no se vea desproporcionado */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destacar el submenú */
+    }
+
+    /* Ítems dentro del submenú */
+    .submenu-item {
+      padding: 10px 20px;
+      color: white;
+      text-align: left;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    /* Hover para los ítems del submenú */
+    .submenu-item:hover {
+      background-color: #666;
+    }
+
+    /* Mostrar el submenú al pasar el mouse */
+    .menu-item:hover .submenu {
+      display: flex;
+    }
+  </style>
+</head>
+<body>
+  <div class="menu">
+    <div class="menu-item">
+      Inicio
+    </div>
+    <div class="menu-item">
+      Servicios
+      <div class="submenu">
+        <div class="submenu-item">Desarrollo Web</div>
+        <div class="submenu-item">Diseño Gráfico</div>
+        <div class="submenu-item">Marketing Digital</div>
+      </div>
+    </div>
+    <div class="menu-item">
+      Contacto
+    </div>
+  </div>
+</body>
+</html>
