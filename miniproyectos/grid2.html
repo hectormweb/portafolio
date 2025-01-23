@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plantilla con Grid</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: grid;
+      grid-template-areas:
+        "header"
+        "main"
+        "aside"
+        "footer";
+      grid-template-rows: auto 1fr auto auto;
+      height: 100vh;
+      background-color: #f7f9fc;
+    }
+
+    header {
+      grid-area: header;
+      background-color: #3c82d6;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+
+    main {
+      grid-area: main;
+      background-color: #e6eefc;
+      padding: 20px;
+      text-align: justify;
+    }
+
+    aside {
+      grid-area: aside;
+      background-color: #9dc3f9;
+      padding: 20px;
+      color: #fff;
+    }
+
+    footer {
+      grid-area: footer;
+      background-color: #3c82d6;
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+    }
+
+    @media (min-width: 768px) {
+      body {
+        grid-template-areas:
+          "header header"
+          "main aside"
+          "footer footer";
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: auto 1fr auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Plantilla de Diseño con Grid</h1>
+  </header>
+  <main>
+    <p>
+      Bienvenido a este diseño web creado con CSS Grid. Este diseño utiliza áreas definidas por Grid para organizar el contenido de forma clara y adaptable.
+    </p>
+  </main>
+  <aside>
+    <h2>Barra Lateral</h2>
+    <p>
+      Aquí puedes añadir enlaces, información adicional o contenido secundario.
+    </p>
+  </aside>
+  <footer>
+    <p>&copy; 2025 - Tu Nombre</p>
+  </footer>
+</body>
+</html>
