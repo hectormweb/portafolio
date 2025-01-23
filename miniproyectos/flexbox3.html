@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rejilla Simple</title>
+    <style>
+        /* Contenedor principal de la rejilla */
+        .rejilla {
+            display: flex; /* Diseño flexible */
+            flex-wrap: wrap; /* Permite que los elementos pasen a la siguiente línea si no caben */
+            justify-content: space-between; /* Distribuye los elementos con espacios iguales entre ellos */
+            gap: 20px; /* Espaciado entre filas y columnas */
+            padding: 20px; /* Espaciado interno alrededor del contenedor */
+            background-color: #f9f9f9; /* Fondo claro */
+        }
+
+        /* Elementos de la rejilla */
+        .elemento {
+            background-color: #007BFF; /* Fondo azul */
+            color: white; /* Texto blanco */
+            text-align: center; /* Centra el texto dentro del elemento */
+            padding: 20px; /* Espaciado interno */
+            border-radius: 5px; /* Bordes redondeados */
+            flex: 1 1 calc(33.33% - 20px); /* Tamaño dinámico: ocupa 1/3 del ancho menos el espacio entre columnas */
+            max-width: calc(33.33% - 20px); /* Limita el ancho máximo */
+            box-sizing: border-box; /* Incluye el padding en el tamaño total */
+        }
+
+        /* Rejilla responsiva para pantallas pequeñas */
+        @media (max-width: 768px) {
+            .elemento {
+                flex: 1 1 calc(50% - 20px); /* En pantallas medianas, ocupa la mitad del ancho */
+                max-width: calc(50% - 20px);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .elemento {
+                flex: 1 1 100%; /* En pantallas pequeñas, ocupa todo el ancho */
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Rejilla de elementos -->
+    <div class="rejilla">
+        <div class="elemento">Elemento 1</div>
+        <div class="elemento">Elemento 2</div>
+        <div class="elemento">Elemento 3</div>
+        <div class="elemento">Elemento 4</div>
+        <div class="elemento">Elemento 5</div>
+        <div class="elemento">Elemento 6</div>
+    </div>
+</body>
+</html>
