@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psicólogo Profesional - Bienestar Emocional</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        .hero {
+            position: relative;
+            background: url('psicologo.jpg') no-repeat center center/cover;
+            height: 70vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            margin: 10px 0 0;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        .section {
+            margin: 40px 0;
+        }
+        .section h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 2rem;
+        }
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .service {
+            background: white;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            flex: 1 1 calc(33.333% - 20px);
+            box-sizing: border-box;
+            transition: transform 0.2s;
+        }
+        .service:hover {
+            transform: scale(1.05);
+        }
+        .service h3 {
+            margin-top: 0;
+        }
+        .cta {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .cta a {
+            background: #ff6f61;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .cta a:hover {
+            background: #e85b50;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: white;
+        }
+        .contact {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .contact div {
+            flex: 1 1 calc(50% - 20px);
+            margin: 10px;
+        }
+        .faq {
+            margin: 20px 0;
+        }
+        .faq h3 {
+            margin-bottom: 10px;
+        }
+        .faq p {
+            margin: 0 0 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <div class="hero-content">
+            <h1>Psicólogo Profesional</h1>
+            <p>Bienestar emocional y mental a tu alcance.</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="section">
+            <h2>Sobre Mí</h2>
+            <p>Hola, soy un psicólogo profesional con años de experiencia ayudando a personas a superar sus desafíos emocionales y mentales. Mi enfoque está centrado en crear un espacio seguro, confiable y acogedor para que puedas encontrar el equilibrio que buscas.</p>
+        </div>
+
+        <div class="section">
+            <h2>Servicios</h2>
+            <div class="services">
+                <div class="service">
+                    <h3>Consultas Presenciales</h3>
+                    <p>Sesiones en un ambiente cómodo y privado, diseñadas para abordar tus necesidades específicas.</p>
+                </div>
+                <div class="service">
+                    <h3>Sesiones en Línea</h3>
+                    <p>Accede a apoyo psicológico desde cualquier lugar, con flexibilidad y comodidad.</p>
+                </div>
+                <div class="service">
+                    <h3>Terapia de Pareja</h3>
+                    <p>Ayuda para mejorar la comunicación y resolver conflictos en tus relaciones.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Agenda tu Cita</h2>
+            <div class="cta">
+                <a href="#">Reserva Ahora</a>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Contacto</h2>
+            <div class="contact">
+                <div>
+                    <h3>Dirección</h3>
+                    <p>Av. Principal 123, Ciudad</p>
+                </div>
+                <div>
+                    <h3>Teléfono</h3>
+                    <p>+123 456 7890</p>
+                </div>
+                <div>
+                    <h3>Email</h3>
+                    <p>psicologo@email.com</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section faq">
+            <h2>Preguntas Frecuentes</h2>
+            <div>
+                <h3>¿Cuánto dura una sesión?</h3>
+                <p>Las sesiones suelen durar entre 50 y 60 minutos.</p>
+                <h3>¿Es confidencial?</h3>
+                <p>Sí, todas las sesiones son completamente confidenciales.</p>
+                <h3>¿Puedo cancelar una cita?</h3>
+                <p>Por supuesto, pero te pedimos que nos avises con al menos 24 horas de anticipación.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 Psicólogo Profesional. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

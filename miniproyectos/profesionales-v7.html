@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseño de Páginas Web para Profesionales</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            saline-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        .hero {
+            position: relative;
+            background: url('pro.jpg') no-repeat center center/cover;
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            margin: 10px 0 0;
+        }
+        .cta {
+            margin-top: 20px;
+        }
+        .cta a {
+            background: #ff6f61;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .cta a:hover {
+            background: #e85b50;
+        }
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        .intro {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .intro p {
+            font-size: 1.1rem;
+        }
+    
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos salten a la siguiente fila si no caben */
+    gap: 20px; /* Espacio entre los elementos */
+    justify-content: space-between; /* Espaciado horizontal entre los elementos */
+    align-items: flex-start; /* Alineación vertical de los elementos */
+}
+.professional {
+    background: white;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    flex: 1 1 calc(30% - 20px); /* Ancho flexible (30% menos el gap) */
+    box-sizing: border-box; /* Incluye padding y border en el tamaño total */
+}
+.professional:hover {
+    transform: scale(1.02);
+}
+
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <div class="hero-content">
+            <h1>Diseño y Desarrollo de Páginas Web para Profesionales</h1>
+            <p>Transforma tu presencia en línea con un sitio web único y personalizado.</p>
+            <div class="cta">
+                <a href="#contacto">¡Hablemos de tu proyecto!</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="intro">
+            <p>He realizado estas páginas web para distintos profesionales, dedicando atención al detalle y creando experiencias de usuario agradables. A continuación, puedes ver ejemplos destacados.</p>
+        </div>
+
+<div class="flex-container">
+        <div class="professional">
+            <h2>Dentista</h2>
+            <p>Un sitio web profesional para clínicas dentales, destacando tus servicios y permitiendo reservas en línea.</p>
+
+        </div>
+
+        <div class="professional">
+            <h2>Pediatra</h2>
+            <p>Diseño enfocado en la atención a niños y familias, con información clara y accesible.</p>
+
+        </div>
+
+        <div class="professional">
+            <h2>Psicólogo</h2>
+            <p>Sitios personalizados para consultas presenciales y sesiones en línea, con un enfoque profesional y acogedor.</p>
+
+        </div>
+
+        <div class="professional">
+            <h2>Veterinario</h2>
+            <p>Páginas optimizadas para clínicas veterinarias, mostrando tus servicios y facilitando reservas.</p>
+
+        </div>
+
+        <div class="professional">
+            <h2>Mecánico</h2>
+            <p>Plataformas diseñadas para talleres mecánicos, destacando tus especialidades y contacto rápido.</p>
+  
+        </div>
+
+        <div class="professional">
+            <h2>Pintor</h2>
+            <p>Un sitio web con galerías visuales para mostrar tus mejores proyectos y captar más clientes.</p>
+  
+        </div>
+
+        <div class="professional">
+            <h2>Arquitecto</h2>
+            <p>Diseños modernos que resaltan tus proyectos arquitectónicos y tus capacidades profesionales.</p>
+  
+        </div>
+
+        <div class="professional">
+            <h2>Abogado</h2>
+            <p>Sitios web profesionales para bufetes y servicios legales, claros y bien estructurados.</p>
+  
+        </div>
+
+        <div class="professional">
+            <h2>Contador</h2>
+            <p>Páginas diseñadas para contadores, mostrando tus servicios y asesorías de forma profesional.</p>
+  
+        </div>
+
+        <div class="professional">
+            <h2>Diseñador de Moda</h2>
+            <p>Sitios web elegantes para mostrar tus colecciones y ofrecer una experiencia visual única.</p>
+  
+        </div>
+</div><!--fin flexbox contenedor-->
+
+    </div>
+
+    <footer id="contacto">
+        <p>¿Interesado en tener un sitio web profesional? Contáctame para más información.</p>
+        <p>Email: tuemail@correo.com | Teléfono: 123-456-7890</p>
+    </footer>
+</body>
+</html>
