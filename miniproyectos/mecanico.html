@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taller Mecánico</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: white;
+      color: #f4f4f4;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: white;
+      padding: 10px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      color: #e63946;
+    }
+
+    .hero {
+      position: relative;
+      background: url('mecanico.jpg') center/cover no-repeat;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .hero-text {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+    }
+
+    .hero-text h2 {
+      font-size: 2rem;
+    }
+
+    .hero-text p {
+      font-size: 1.1rem;
+    }
+
+    .services {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .services h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #e63946;
+    }
+
+    .services .service-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .service {
+      background-color: #1b2a33;
+      border-radius: 10px;
+      padding: 20px;
+      width: 300px;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s;
+    }
+
+    .service img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .service h3 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+
+    .service p {
+      font-size: 1rem;
+      color: #ccc;
+    }
+
+    .service:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      background-color: #1b2a33;
+      text-align: center;
+      padding: 20px;
+      margin-top: 20px;
+      color: #f4f4f4;
+    }
+
+    footer p {
+      font-size: 0.9rem;
+    }
+
+    footer a {
+      color: #e63946;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <!-- Encabezado -->
+  <header>
+    <h1>Taller Mecánico El Motor</h1>
+  </header>
+
+  <!-- Sección Hero -->
+  <section class="hero">
+    <div class="hero-text">
+      <h2>Confía en los expertos</h2>
+      <p>Reparación, mantenimiento y servicios especializados para tu vehículo.</p>
+    </div>
+  </section>
+
+  <!-- Sección de Servicios -->
+  <section class="services">
+    <h2>Nuestros Servicios</h2>
+    <div class="service-list">
+      <div class="service">
+        <img src="mecanico-revision.jpg" alt="Revisión de Motor">
+        <h3>Revisión de Motor</h3>
+        <p>Diagnóstico y reparación de motores con tecnología avanzada.</p>
+      </div>
+      <div class="service">
+        <img src="mecanico-aceite.jpg" alt="Cambio de Aceite">
+        <h3>Cambio de Aceite</h3>
+        <p>Usamos aceites de alta calidad para alargar la vida de tu motor.</p>
+      </div>
+      <div class="service">
+        <img src="mecanico-frenos.jpg" alt="Frenos">
+        <h3>Servicio de Frenos</h3>
+        <p>Revisión y cambio de frenos para tu seguridad en el camino.</p>
+      </div>
+      <div class="service">
+        <img src="mecanico-alineacion.jpg" alt="Alineación">
+        <h3>Alineación y Balanceo</h3>
+        <p>Garantizamos una conducción suave y estable.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pie de página -->
+  <footer>
+    <p>&copy; 2025 Taller Mecánico El Motor. Todos los derechos reservados. <a href="#contacto">Contáctanos</a></p>
+  </footer>
+</body>
+</html>
