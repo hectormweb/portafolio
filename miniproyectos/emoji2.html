@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emojis con CSS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .emoji-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .emoji {
+            font-size: 50px;
+            margin: 10px;
+        }
+        .grande {
+            font-size: 80px; /* Aumenta el tamaño */
+        }
+        .pequeno {
+            font-size: 30px; /* Reduce el tamaño */
+        }
+        .color {
+            color: red; /* Cambia el color (solo en emojis monocromáticos) */
+        }
+        .sombra {
+            text-shadow: 3px 3px 6px gray; /* Agrega sombra */
+        }
+        .grosor {
+            font-weight: bold; /* Aumenta el grosor de algunos emojis de texto */
+        }
+        .rotado {
+            transform: rotate(15deg); /* Rotación ligera */
+            display: inline-block;
+        }
+        .invertido {
+            transform: rotateY(180deg); /* Voltea el emoji horizontalmente */
+            display: inline-block;
+        }
+        .desenfoque {
+            filter: blur(2px); /* Aplica desenfoque */
+        }
+        .brillo {
+            filter: brightness(1.5); /* Aumenta el brillo */
+        }
+        .escala {
+            transform: scale(1.5); /* Agranda sin afectar el texto */
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Emojis con Efectos CSS</h1>
+    <div class="emoji-container">
+        <p class="emoji grande">😀 Emoji grande</p>
+        <p class="emoji pequeno">😎 Emoji pequeño</p>
+        <p class="emoji color">✔️ Emoji con color</p>
+        <p class="emoji sombra">🔥 Emoji con sombra</p>
+        <p class="emoji grosor">✨ Emoji con más grosor</p>
+        <p class="emoji rotado">🎉 Emoji rotado</p>
+        <p class="emoji invertido">👋 Emoji invertido</p>
+        <p class="emoji desenfoque">💡 Emoji desenfocado</p>
+        <p class="emoji brillo">⭐ Emoji con brillo</p>
+        <p class="emoji escala">📌 Emoji escalado</p>
+    </div>
+
+</body>
+</html>
