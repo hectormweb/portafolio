@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emojis con CSS</title>
+    <style>
+        .emoji-grande {
+            font-size: 50px; /* Aumenta el tamaño */
+        }
+
+        .emoji-color {
+            color: red; /* Cambia el color (solo funciona en emojis monocromáticos) */
+        }
+
+        .emoji-sombra {
+            text-shadow: 2px 2px 5px gray; /* Agrega sombra */
+        }
+
+        .emoji-transform {
+            transform: rotate(45deg) scale(1.5); /* Rota y agranda */
+            display: inline-block; /* Necesario para aplicar transformaciones */
+        }
+    </style>
+</head>
+<body>
+    <p class="emoji-grande">😀 Emoji grande</p>
+    <p class="emoji-color">✔ ❤️ ★ Emojis con color</p>
+    <p class="emoji-sombra">🔥 Emoji con sombra</p>
+    <p class="emoji-transform">🎉 Emoji rotado y escalado</p>
+</body>
+</html>
