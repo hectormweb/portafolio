@@ -1,8 +1,8 @@
 # 👨‍💻 ¡Hola! Soy Hector👋
 
-Soy un desarrollador web, me encanta todo lo relacionado en paginas web.
+Soy un desarrollador web, me encanta todo lo relacionado en paginas web
 
-Voy aprendiendo a ser maquetador web y desarrollador frontend.
+en especial hacer maquetas web y diversos elementos web
 
 
 
