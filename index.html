@@ -1,1 +1,130 @@
-<h1>hola mundo</h1>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portafolio - Desarrollador Web</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background: #222;
+      color: #fff;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav {
+      background: #444;
+      display: flex;
+      justify-content: center;
+      padding: 0.5rem;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1rem;
+    }
+    main {
+      max-width: 1000px;
+      margin: auto;
+      padding: 2rem;
+    }
+    section {
+      margin-bottom: 2rem;
+    }
+    .proyecto {
+      background: white;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .proyecto h3 {
+      margin-top: 0;
+    }
+    .botones a {
+      display: inline-block;
+      margin-right: 1rem;
+      padding: 0.5rem 1rem;
+      background: #007bff;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+    footer {
+      text-align: center;
+      background: #222;
+      color: white;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+      }
+      .botones a {
+        display: block;
+        margin-bottom: 0.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Juan Pérez</h1>
+    <p>Desarrollador Web | HTML & CSS Vanilla</p>
+  </header>
+
+  <nav>
+    <a href="#sobre-mi">Sobre mí</a>
+    <a href="#proyectos">Proyectos</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <main>
+    <section id="sobre-mi">
+      <h2>Sobre mí</h2>
+      <p>Soy un desarrollador web enfocado en la creación de sitios web responsivos, accesibles y bien estructurados usando HTML y CSS puro, sin frameworks. Me especializo en maquetación clara, limpia y funcional.</p>
+    </section>
+
+    <section id="proyectos">
+      <h2>Proyectos</h2>
+
+      <div class="proyecto">
+        <h3>1. Paginación usando JSON de GitHub</h3>
+        <p>Este proyecto muestra cómo implementar una paginación dinámica obteniendo datos de un archivo JSON alojado en GitHub. Está hecho con HTML, CSS y JavaScript vanilla.</p>
+        <div class="botones">
+          <a href="https://ejemplo.com/paginacion-vista" target="_blank">Ver en vivo</a>
+          <a href="https://ejemplo.com/paginacion-docs" target="_blank">Ver documentación</a>
+        </div>
+      </div>
+
+      <div class="proyecto">
+        <h3>2. Web personal responsiva con menú hamburguesa</h3>
+        <p>Sitio web personal adaptado a dispositivos móviles, con menú tipo hamburguesa funcional sin librerías externas. Enfocado en diseño limpio y experiencia de usuario.</p>
+        <div class="botones">
+          <a href="https://ejemplo.com/web-personal" target="_blank">Ver en vivo</a>
+          <a href="https://ejemplo.com/web-personal-docs" target="_blank">Ver documentación</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <p>Podés escribirme a <strong>juanperez@email.com</strong> o contactarme por redes sociales para colaborar en proyectos web.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Juan Pérez - Desarrollador Web</p>
+  </footer>
+
+</body>
+</html>
+
