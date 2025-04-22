@@ -4,7 +4,7 @@ Este es mi portafolio desarrollado con HTML y CSS desde cero, sin frameworks ni 
 
 ## Web
 
-Ver línea en GitHub Pages:  
+Ver en GitHub Pages:  
 [https://hectormweb.github.io/portafolio/](https://hectormweb.github.io/portafolio/)
 
 ## Tecnologías utilizadas
