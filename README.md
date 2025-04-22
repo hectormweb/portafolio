@@ -7,13 +7,6 @@ Este es mi portafolio desarrollado con HTML y CSS desde cero, sin frameworks ni 
 - HTML5
 - CSS3
 
-## Características
-
-- Diseño responsive adaptable a distintos dispositivos.
-- Navegación accesible.
-- Código organizado con convenciones claras.
-- Secciones: presentación, proyectos destacados, contacto.
-
 ## Objetivo
 
 Este proyecto sirve como carta de presentación para clientes y empleadores. Está pensado para demostrar mi enfoque detallado y profesional en la maquetación web sin depender de herramientas externas como Bootstrap o Tailwind.
