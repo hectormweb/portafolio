@@ -1,1 +1,28 @@
-# pagina
+# Portafolio Web Personal
+
+Este es mi portafolio desarrollado con HTML y CSS desde cero, sin frameworks ni librerías externas. Está enfocado en mostrar mis habilidades como maquetador web, priorizando código limpio, semántico y buenas prácticas de accesibilidad y diseño responsive.
+
+## Tecnologías utilizadas
+
+- HTML5
+- CSS3
+
+## Características
+
+- Diseño responsive adaptable a distintos dispositivos.
+- Navegación accesible.
+- Código organizado con convenciones claras.
+- Secciones: presentación, proyectos destacados, contacto.
+
+## Objetivo
+
+Este proyecto sirve como carta de presentación para clientes y empleadores. Está pensado para demostrar mi enfoque detallado y profesional en la maquetación web sin depender de herramientas externas como Bootstrap o Tailwind.
+
+## Contacto
+
+Si te interesa trabajar conmigo o querés darme feedback:  
+[hectormweb@gmail.com](mailto:hectormweb@gmail.com)
+
+---
+
+Hecho con dedicación y muchas líneas de código.
