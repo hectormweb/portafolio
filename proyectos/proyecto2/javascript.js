@@ -1,9 +1,11 @@
 let publicaciones = [];
 let paginaActual = 1;
 const publicacionesPorPagina = 6;
+let totalPaginas = 0; // Definida globalmente
+
 
 function mostrarPublicaciones() {
-  const totalPaginas = Math.ceil(publicaciones.length / publicacionesPorPagina);
+  totalPaginas = Math.ceil(publicaciones.length / publicacionesPorPagina);
   const inicio = (paginaActual - 1) * publicacionesPorPagina;
   const fin = inicio + publicacionesPorPagina;
   const publicacionesPagina = publicaciones.slice(inicio, fin);
