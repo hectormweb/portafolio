@@ -23,7 +23,7 @@ function mostrarPublicaciones() {
 
   contenedor.innerHTML = textogrupo;
 
-  document.getElementById("indicadorPagina").textContent = `Página ${paginaActual}/${totalPaginas}`;
+  document.getElementById("indicadorPagina").textContent = `Pág. ${paginaActual}/${totalPaginas}`;
 
   const btnPrimeraPagina = document.getElementById("btnPrimeraPagina");
   const btnAnterior = document.getElementById("btnAnterior");
