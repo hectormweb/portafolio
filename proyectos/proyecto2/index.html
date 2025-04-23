@@ -1,1 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Paginación BEM</title>
+  <link type="stylesheet" src="estilo.css">
+ 
+</head>
 
+<body>
+
+  <section class="publicaciones">
+    <h2 class="publicaciones__titulo">Publicaciones</h2>
+    <div id="resumen" class="publicaciones__contenedor"></div>
+
+    <div class="paginacion">
+      <button id="btnAnterior" class="paginacion__btn">Anterior</button>
+      <button id="btnSiguiente" class="paginacion__btn paginacion__btn--siguiente">Siguiente</button>
+      <button id="btnPrimeraPagina" class="paginacion__btn">Índice</button>
+      <span id="indicadorPagina" class="paginacion__indicador"></span>
+    </div>
+  </section>
+
+<script src="javascript.js">
+</script>
