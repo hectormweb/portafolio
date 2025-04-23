@@ -86,3 +86,13 @@
     .paginacion__btn--siguiente {
       margin-left: 10px;
     }
+
+/* --------------------------------------------------------------------- */
+
+@media (max-width: 500px) {
+
+.publicaciones__item {
+    width: 100%; /* 1 por fila */
+  }
+
+}/* fin media queries*/
