@@ -91,6 +91,10 @@
 
 @media (max-width: 500px) {
 
+    .publicaciones {
+      width: 90%;
+}
+
 .publicaciones__item {
     width: 100%; /* 1 por fila */
   }
