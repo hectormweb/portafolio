@@ -1,1 +1,88 @@
 
+    body {
+      background-color: brown;
+    }
+
+    .publicaciones {
+      margin: 0 auto;
+      width: 80%;
+      background-color: white;
+      padding: 1rem 2rem;
+    }
+
+    .publicaciones__contenedor {
+      padding: 0;
+      background-color: skyblue;
+      height: auto;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: stretch;
+      column-gap: 10px;
+      row-gap: 10px;
+    }
+
+    .publicaciones__item {
+      background-color: white;
+      border: 1px solid crimson;
+      padding: 1rem;
+      border-radius: 4px;
+      width: calc((100% - 20px) / 3);
+      height: 100%;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .publicaciones__titulo {
+      color: #333;
+      margin: 0;
+      flex-shrink: 0;
+    }
+
+    .publicaciones__imagen {
+      width: auto;
+      flex: 1;
+      min-height: 0;
+      max-height: 150px;
+      object-fit: cover;
+      margin: 0;
+      aspect-ratio: 22/11;
+    }
+
+    .publicaciones__contenido {
+      padding: 0;
+      margin: 0;
+      color: #666;
+      flex-shrink: 0;
+    }
+
+    .paginacion {
+      margin-top: 20px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: baseline;
+    }
+
+    .paginacion__indicador {
+      margin-left: auto;
+      padding-right: 1rem;
+      font-weight: bold;
+      font-size: 1.3rem;
+    }
+
+    .paginacion__btn {
+      padding: 8px 16px;
+      background: #f0f0f0;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .paginacion__btn--disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+
+    .paginacion__btn--siguiente {
+      margin-left: 10px;
+    }
