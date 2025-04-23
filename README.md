@@ -16,6 +16,10 @@ Ver en GitHub Pages:
 
 Este proyecto sirve como carta de presentación para clientes y empleadores. Está pensado para demostrar mi enfoque detallado y profesional en la maquetación web sin depender de herramientas externas como Bootstrap o Tailwind.
 
+## Proyectos
+
+## [Links](proyectos/proyectos.md)
+
 ## Contacto
 
 Si te interesa trabajar conmigo o querés darme feedback:  
