@@ -61,7 +61,7 @@ function iniciarEventos() {
 }
 
 // Carga JSON externo
-fetch('https://raw.githubusercontent.com/hectormweb/portafolio/refs/heads/main/proyectos/proyecto2/paginacion.json')
+fetch('https://raw.githubusercontent.com/hectormweb/portafolio/refs/heads/main/proyectos/proyecto2/recursos/paginacion.json')
   .then(response => response.json())
   .then(data => {
     publicaciones = data;
