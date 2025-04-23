@@ -1,0 +1,14 @@
+[
+{"id": 1, "titulo": "Publicacion 1", "imagen": "recursos/imagen1.jpg", "resumen": "resumen 1"},
+{"id": 2, "titulo": "Publicacion 2", "imagen": "recursos/imagen2.jpg", "resumen": "resumen 2"},
+{"id": 3, "titulo": "Publicacion 3", "imagen": "recursos/imagen3.jpg", "resumen": "resumen 3"},
+{"id": 4, "titulo": "Publicacion 4", "imagen": "recursos/imagen4.jpg", "resumen": "resumen 4"},
+{"id": 5, "titulo": "Publicacion 5", "imagen": "recursos/imagen5.jpg", "resumen": "resumen 5"},
+{"id": 6, "titulo": "Publicacion 6", "imagen": "recursos/imagen6.jpg", "resumen": "resumen 6"},
+{"id": 7, "titulo": "Publicacion 7", "imagen": "recursos/imagen7.jpg", "resumen": "resumen 7"},
+{"id": 8, "titulo": "Publicacion 8", "imagen": "recursos/imagen8.jpg", "resumen": "resumen 8"},
+{"id": 9, "titulo": "Publicacion 9", "imagen": "recursos/imagen9.jpg", "resumen": "resumen 9"},
+{"id": 10, "titulo": "Publicacion 10", "imagen": "recursos/imagen10.jpg", "resumen": "resumen 10"},
+{"id": 11, "titulo": "Publicacion 11", "imagen": "recursos/imagen11.jpg", "resumen": "resumen 11"},
+{"id": 12, "titulo": "Publicacion 12", "imagen": "recursos/imagen12.jpg", "resumen": "resumen 12"}
+]
