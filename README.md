@@ -18,7 +18,7 @@ Este proyecto sirve como carta de presentación para clientes y empleadores. Est
 
 ## Proyectos
 
-## [Links](proyectos/proyectos.md)
+[Links](proyectos/proyectos.md)
 
 ## Contacto
 
