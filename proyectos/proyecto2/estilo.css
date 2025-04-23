@@ -99,4 +99,8 @@
     width: 100%; /* 1 por fila */
   }
 
+
+    .paginacion__btn {
+      padding: 8px 8px;
+
 }/* fin media queries*/
