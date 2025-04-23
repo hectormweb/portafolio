@@ -64,7 +64,7 @@ fetch('https://raw.githubusercontent.com/hectormweb/portafolio/refs/heads/main/p
   .then(data => {
     publicaciones = data;
     mostrarPublicaciones();
-    iniciarEventos();
+    
   })
   .catch(error => {
   document.getElementById("contenido").innerHTML = `
@@ -74,3 +74,5 @@ fetch('https://raw.githubusercontent.com/hectormweb/portafolio/refs/heads/main/p
     </div>
   `;
 });
+
+iniciarEventos();
