@@ -93,6 +93,7 @@
 
     .publicaciones {
       width: 90%;
+      padding: 1rem 1rem;
 }
 
 .publicaciones__item {
