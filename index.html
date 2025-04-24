@@ -5,232 +5,245 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Portafolio - Desarrollador Web</title>
   <style>
-    :root {
-      --rojo-oscuro: #8b0000;
-      --gris-oscuro: #1f1f1f;
-      --gris-suave: #eaeaea;
-      --gris-medio: #3a3a3a;
-      --blanco: #ffffff;
-      --fondo-principal: #f5f5f5;
-      --tamanio-texto: 1.2rem;
-    }
-
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      padding: 0;
-      background: var(--fondo-principal);
-      color: var(--gris-oscuro);
-      line-height: 1.6;
-    }
-
-    header {
-      background: var(--rojo-oscuro);
-      color: var(--blanco);
-      padding: 2rem 1rem;
-      text-align: center;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
-    }
-
-    header p {
-      font-size: 1.1rem;
-      margin-top: 0.5rem;
-    }
-
-    nav {
-      background: var(--rojo-oscuro);
-      display: flex;
-      justify-content: center;
-      padding: 0.75rem;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 1rem;
-      font-weight: bold;
-    }
-
-    main {
-      max-width: 1000px;
-      margin: auto;
-      padding: 2rem;
-      background: var(--fondo-principal);
-    }
-
-    section {
-      margin-bottom: 3rem;
-    }
-
-    h2 {
-      color: var(--gris-oscuro);
-      margin-bottom: 1rem;
-      border-bottom: 2px solid var(--gris-suave);
-      padding-bottom: 0.5rem;
-      font-size: 2rem;
-    }
-
-    #sobre-mi {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      gap: 2rem;
-    }
-
-    #sobre-mi img {
-      width: 200px;
-      height: 200px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 4px solid var(--gris-suave);
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
-    }
-
-    #sobre-mi .texto {
-      flex: 1;
-      min-width: 250px;
-
-    }
-
-    #sobre-mi .texto p {
-      font-size: var(--tamanio-texto);
-      color: var(--gris-oscuro);
-      margin-bottom: 1rem;
-      text-align: justify;
-background-color:white;
-padding:1rem;
-    }
-#contacto p{
-	background-color:white;
-	padding:1rem;
-font-size: var(--tamanio-texto)
+:root {
+  --rojo-oscuro: #8b0000;
+  --gris-oscuro: #1f1f1f;
+  --gris-suave: #eaeaea;
+  --gris-medio: #3a3a3a;
+  --blanco: #ffffff;
+  --negro: #000;
+  --fondo-principal: #333;
+  --tamanio-texto: 1.2rem;
+  --tamanio-documento: 
 }
 
-    .proyecto {
-      background: var(--blanco);
-      padding: 1.5rem;
-      NOborder-radius: 12px;
-      NObox-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
-    }
-.proyecto p{
-font-size: var(--tamanio-texto);
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: var(--fondo-principal);
+  color: var(--gris-oscuro);
+  line-height: 1.6;
 }
 
-    .proyecto h3 {
-      margin-top: 0;
-      color: var(--gris-oscuro);
-      font-size: 1.3rem;
-    }
+.header {
+  background: #0E779E;
+  color: var(--blanco);
+  padding: 1rem 1rem;
+  text-align: center;
+max-width:80%;
+margin: 0 auto;
+box-sizing: border-box;
+}
+.header__titulo {
+  margin: 0;
+  font-size: 2.5rem;
+}
+.header__subtitulo {
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
+}
 
-    .botones a {
-      display: inline-block;
-      margin: 1rem 1rem 0 0;
-      padding: 0.6rem 1.2rem;
-      background: var(--gris-medio);
-      color: white;
-      border-radius: 6px;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 1rem;
-    }
+.nav {
+  background: var(--negro);
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem;
+box-sizing: border-box;
+margin: 0 auto;
+width:80%;
+}
+.nav__enlace {
+  color: white;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-weight: bold;
+}
 
-    footer {
-      text-align: center;
-      background: var(--rojo-oscuro);
-      color: white;
-      padding: 1.5rem;
-      margin-top: 3rem;
-    }
+.main {
+  max-width: 80%;
+  margin: auto;
+  padding: 2rem;
+  background-color: var(--blanco);
+box-sizing: border-box ;
+}
 
-    @media (max-width: 700px) {
-      #sobre-mi {
-        flex-direction: column;
-        text-align: center;
-      }
+section {
+  margin-bottom: 3rem;
+}
 
-      #sobre-mi .texto {
-        padding: 0 1rem;
-      }
+.sobre-mi {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+}
+.sobre-mi__titulo {
+  color: var(--gris-oscuro);
+  margin-bottom: 1rem;
+  border-bottom: 2px solid var(--gris-suave);
+  padding-bottom: 0.5rem;
+  afont-size: 2rem;
+}
+.sobre-mi__imagen {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid var(--gris-suave);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+.sobre-mi__texto {
+  flex: 1;
+  min-width: 250px;
+}
+.sobre-mi__parrafo {
+  font-size: var(--tamanio-texto);
+  color: var(--gris-oscuro);
+  margin-bottom: 1rem;
+  text-align: justify;
+  padding: 1rem;
+}
 
-      nav {
-        flex-direction: column;
-      }
+.proyectos{
+/* nada*/
+}
 
-      .botones a {
-        display: block;
-        margin-bottom: 0.8rem;
-      }
-    }
+.proyectos__titulo{  border-bottom: 2px solid #eaeaea;}
+
+.proyecto {
+  padding: 0 1rem;
+
+}
+.proyecto__titulo {
+  margin: 0 auto;
+padding: 0 auto;
+  color: var(--gris-oscuro);
+  font-size: 1.3rem;
+
+}
+.proyecto__descripcion {
+  font-size: var(--tamanio-texto);
+margin:0 auto;
+}
+
+.botones__enlace {
+  display: inline-block;
+  margin: 0.5rem 1rem 0 0;
+  padding: 0.6rem 1.2rem;
+
+background: linear-gradient(to top left, #b0c4de, #005aa7);
+
+border: solid #eaeaea 1px;
+
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.contacto__mensaje {
+  padding: 1rem;
+  font-size: var(--tamanio-texto);
+}
+
+.footer {
+  text-align: center;
+  background: #073749;
+  color: white;
+  padding: 1.5rem;
+  margin: 0 auto;
+box-sizing: border-box;
+width:80%;
+}
+.footer__texto {
+  margin: 0;
+}
+
+
+@media (max-width: 800px) {
+  .sobre-mi {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .sobre-mi__imagen--subir {
+    order: -1;
+    display: block;
+  }
+
+  .sobre-mi__texto {
+    padding: 0 1rem;
+  }
+
+  .nav {
+    flex-direction: column;
+  }
+
+  .botones__enlace {
+    display: block;
+    margin-bottom: 0.8rem;
+  }
+}
   </style>
 </head>
 <body>
 
-  <header>
-    <h1>Juan Pérez</h1>
-    <p>Desarrollador Web | HTML & CSS Vanilla</p>
-  </header>
+<header class="header">
+  <h1 class="header__titulo">Hector Mamani</h1>
+  <p class="header__subtitulo">Desarrollador Web | HTML & CSS Vanilla</p>
+</header>
 
-  <nav>
-    <a href="#sobre-mi">Sobre mí</a>
-    <a href="#proyectos">Proyectos</a>
-    <a href="#contacto">Contacto</a>
-  </nav>
+<nav class="nav">
+  <a class="nav__enlace" href="#sobre-mi">Sobre mí</a>
+  <a class="nav__enlace" href="#proyectos">Proyectos</a>
+  <a class="nav__enlace" href="#contacto">Contacto</a>
+</nav>
 
-  <main>
-    <section id="sobre-mi">
-      <div class="texto">
-        <h2>Sobre mí</h2>
-        <p>
-          Soy desarrollador web enfocado en HTML y CSS puro, creando sitios accesibles, organizados y responsivos sin usar frameworks.
-<br><br>
-          Me gusta escribir código limpio y estructurado, cuidando cada detalle para que los sitios funcionen bien y se vean profesionales en cualquier dispositivo.
-        </p>
+<main class="main">
+  <section class="sobre-mi" id="sobre-mi">
+    <div class="sobre-mi__texto">
+      <h2 class="sobre-mi__titulo">Sobre mí</h2>
+      <p class="sobre-mi__parrafo">
+Soy desarrollador web enfocado en HTML, CSS y JavaScript puro, sin el uso de librerías externas.
+Me apasiona escribir el código desde su lógica base, entendiendo cómo funciona realmente cada parte.
+</p>
+    </div>
+    <img class="sobre-mi__imagen sobre-mi__imagen--subir" src="proyectos.jpg" alt="Foto de Hector Mamani" />
+  </section>
+
+  <section class="proyectos" id="proyectos">
+    <h2 class="proyectos__titulo">Proyectos</h2>
+
+    <div class="proyecto">
+      <h3 class="proyecto__titulo">1. Paginación usando JSON de GitHub</h3>
+      <p class="proyecto__descripcion">Proyecto en JavaScript vanilla...</p>
+      <div class="botones">
+        <a class="botones__enlace" href="#">Ver en vivo</a>
+        <a class="botones__enlace" href="#">Ver documentación</a>
       </div>
-      <img src="tu-imagen.jpg" alt="Foto de Juan Pérez" />
-    </section>
+    </div>
 
-    <section id="proyectos">
-      <h2>Proyectos</h2>
-
-      <div class="proyecto">
-        <h3>1. Paginación usando JSON de GitHub</h3>
-        <p>
-          Proyecto en JavaScript vanilla que implementa una paginación dinámica obteniendo datos desde un archivo JSON en GitHub.
-        </p>
-        <div class="botones">
-          <a href="https://ejemplo.com/paginacion-vista" target="_blank">Ver en vivo</a>
-          <a href="https://ejemplo.com/paginacion-docs" target="_blank">Ver documentación</a>
-        </div>
+    <div class="proyecto" style="margin-top: 2rem;">
+      <h3 class="proyecto__titulo">2. Web personal responsiva...</h3>
+      <p class="proyecto__descripcion">Web responsive desarrollada sin frameworks...</p>
+      <div class="botones">
+        <a class="botones__enlace" href="#">Ver en vivo</a>
+        <a class="botones__enlace" href="#">Ver documentación</a>
       </div>
+    </div>
+  </section>
 
-      <div class="proyecto" style="margin-top: 2rem;">
-        <h3>2. Web personal responsiva con menú hamburguesa</h3>
-        <p>
-          Web responsive desarrollada sin frameworks, con menú hamburguesa funcional hecho con HTML, CSS y un poco de JS puro.
-        </p>
-        <div class="botones">
-          <a href="https://ejemplo.com/web-personal" target="_blank">Ver en vivo</a>
-          <a href="https://ejemplo.com/web-personal-docs" target="_blank">Ver documentación</a>
-        </div>
-      </div>
-    </section>
+  <section class="contacto" id="contacto">
+    <h2 class="contacto__titulo">Contacto</h2>
+    <p class="contacto__mensaje">¿Querés trabajar conmigo? Escribime a <strong>juanperez@email.com</strong></p>
+  </section>
+</main>
 
-    <section id="contacto">
-      <h2>Contacto</h2>
-      <p>
-        ¿Querés trabajar conmigo? <br>
-Escribime a <strong>juanperez@email.com</strong>
-      </p>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 Juan Pérez - Desarrollador Web</p>
-  </footer>
+<footer class="footer">
+  <p class="footer__texto">&copy; 2025 Hector Mamani - Desarrollador Web</p>
+</footer>
 
 </body>
 </html>
