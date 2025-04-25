@@ -1,4 +1,4 @@
-9<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
@@ -29,9 +29,9 @@ body {
 .header {
   background: #0E779E;
   color: var(--blanco);
-  padding: 1rem 1rem;
+  padding: 1rem 0 0 0;
   text-align: center;
-max-width:80%;
+width:80%;
 margin: 0 auto;
 box-sizing: border-box;
 }
@@ -48,10 +48,9 @@ box-sizing: border-box;
   background: var(--negro);
   display: flex;
   justify-content: center;
-  padding: 0.5rem;
+  padding: 1rem 0rem;
 box-sizing: border-box;
-margin: 0 auto;
-width:80%;
+margin: 0 ;
 }
 .nav__enlace {
   color: white;
@@ -59,9 +58,10 @@ width:80%;
   margin: 0 1rem;
   font-weight: bold;
 }
+.nav-posicionador{display: block}
 
 .main {
-  max-width: 80%;
+width: 80%;
   margin: auto;
   padding: 2rem;
   background-color: var(--blanco);
@@ -161,8 +161,15 @@ width:80%;
   margin: 0;
 }
 
+.boton-menu{display: none}
 
 @media (max-width: 800px) {
+
+.boton-menu{ display:block; cursor: pointer}
+
+
+
+.header,.main, .footer{ width: 100%;}
   .sobre-mi {
     flex-direction: column;
     text-align: center;
@@ -177,21 +184,29 @@ width:80%;
     padding: 0 1rem;
   }
 
-  .nav {
-    flex-direction: column;
+  .nav-lista {
+display:flex;
+flex-direction: column;
+background-color:red;
+align-items: center;
+justify-content: center;
+
   }
+.nav-posicionador{
+	display: none;
+	position: absolute;
+	left:0;
+	top:180px;
+	background-color: orange;
+	width: 100%;
+box-sizing: border-box;
+}
+.nav-posicionador--activado{display: block;}
 
   .botones__enlace {
     display: block;
     margin-bottom: 0.8rem;
   }
-}
-
-
-@media(width:500px)
-.header,.main,.footer{
-width:95%;}
-
 }
   </style>
 </head>
@@ -200,13 +215,21 @@ width:95%;}
 <header class="header">
   <h1 class="header__titulo">Hector Mamani</h1>
   <p class="header__subtitulo">Desarrollador Web | HTML & CSS Vanilla</p>
-</header>
 
 <nav class="nav">
-  <a class="nav__enlace" href="#sobre-mi">Sobre mí</a>
-  <a class="nav__enlace" href="#proyectos">Proyectos</a>
-  <a class="nav__enlace" href="#contacto">Contacto</a>
+  <span class="boton-menu" id="boton-menu">boton menu</span>
+  <div class="nav-posicionador" id="nav-posicionador-js">
+    <div class="nav-lista" >
+      <a class="nav__enlace" href="#sobre-mi">Sobre mí</a>
+      <a class="nav__enlace" href="#proyectos">Proyectos</a>
+      <a class="nav__enlace" href="#contacto">Contacto</a>
+    </div><!--fin nav-lista--->
+  </div><!-- fin posicionador-->
 </nav>
+
+</header>
+
+
 
 <main class="main">
   <section class="sobre-mi" id="sobre-mi">
@@ -248,9 +271,23 @@ Me apasiona escribir el código desde su lógica base, entendiendo cómo funcion
   </section>
 </main>
 
-<footer class="footer">
+<footer class="footer" id="fotooter-js">
   <p class="footer__texto">&copy; 2025 Hector Mamani - Desarrollador Web</p>
 </footer>
+
+<script>
+    // Selecciona el botón del menú y el menú de navegación
+    const menuButton = document.getElementById('boton-menu');
+    const navMenu = document.getElementById('nav-posicionador-js');
+
+    // Añade un evento de clic al botón del menú
+    menuButton.addEventListener('click', () => {
+
+    // Alterna la clase 'header__nav--active' en el menú de navegación
+    navMenu.classList.toggle('nav-posicionador--activado');
+
+    });
+</script>
 
 </body>
 </html>
