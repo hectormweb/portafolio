@@ -1,4 +1,4 @@
-# Documentación del Desarrollo Web
+<h1 align="center">Documentación del Desarrollo Web</h1>
 
 ## Descripción:
 Les presento la documentación completa de mi sitio web, donde explico cada tecnología implementada, su estructura y funcionalidades clave. Esta guía sirve como referencia para entender el desarrollo y mantenimiento del proyecto.
