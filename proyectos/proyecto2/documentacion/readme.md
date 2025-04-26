@@ -1,6 +1,6 @@
 # Documentación del Desarrollo Web
 
-##Descripción:
+## Descripción:
 Les presento la documentación completa de mi sitio web, donde explico cada tecnología implementada, su estructura y funcionalidades clave. Esta guía sirve como referencia para entender el desarrollo y mantenimiento del proyecto.
 
 ---
